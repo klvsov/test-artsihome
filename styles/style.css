@@ -1,7 +1,7 @@
 .cinema{
     max-width: 1200px;
     margin: auto;
-    padding: 20px 0;
+    padding: 100px 10px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -40,9 +40,9 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    position: fixed;
+    position: absolute;
     top: 20px;
-    right: 30px;
+    left: calc(50% - 100px);
     border: 1px solid tomato;
     border-radius: 10px;
 }
@@ -75,9 +75,23 @@
     height: 480px;
     margin-top: -240px;
     margin-left: -240px;
-    background: url('../images/load.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+    background: url('../images/load.gif') no-repeat 50% 50%;
   }
   
   .hidden {
     display: none;
+  }
+
+  @media(max-width: 1235px){
+    .place{
+        flex-basis: calc(10% - 4px);
+        padding: 10px 2px;
+    }
+  }
+
+  @media(max-width: 576px){
+    .place{
+        flex-basis: calc(20% - 4px);
+        padding: 10px 2px;
+    }
   }
