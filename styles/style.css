@@ -1,0 +1,83 @@
+.cinema{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.place{
+    margin: 4px 2px;
+    flex-basis: calc(5% - 4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reserved{
+    background-color: yellow;
+}
+
+.place.reserved{
+    cursor: not-allowed
+}
+
+.buying{
+    background-color: cyan;
+}
+
+.basket{
+    width: 200px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+}
+
+.basket__text{
+    flex-basis: 80%;
+}
+
+.basket__counter{
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    height: 480px;
+    margin-top: -240px;
+    margin-left: -240px;
+    background: url('../images/load.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+  }
+  
+  .hidden {
+    display: none;
+  }
